@@ -3,34 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToysForU - Unwrap Endless Fun!</title>
+    <title>ToysForU - Where Imagination Takes Flight!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("images/bg-pattern.png"); /* Add a colorful background pattern */
-            background-size: cover;
+            background-color: #f5f5f5; /* Light background for better readability */
         }
 
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 2rem;
+        h1, h2, h3 {
+            margin: 0.5rem 0;
+            text-align: center;
+        }
+
+        .header {
             background-color: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            position: fixed; /* Fixed header for smooth scrolling */
+            top: 0;
+            width: 100%;
+            z-index: 10; /* Ensure header stays on top */
         }
 
-        header a {
+        .header a {
             text-decoration: none;
             color: #333;
             margin: 0 1rem;
             font-weight: bold;
         }
 
-        nav {
+        .navigation {
             display: flex; /* Allow for more menu options */
+        }
+
+        .main-content {
+            padding: 2rem 0;
+            margin-top: 60px; /* Account for header height */
         }
 
         .product-section {
@@ -41,15 +53,16 @@
         }
 
         .product-card {
-            width: 25%;
+            width: 28%; /* Adjust width for more columns */
             text-align: center;
             margin: 1rem;
             padding: 1rem;
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #fff; /* Light background for better readability */
+            background-color: #fff;
             transition: transform 0.2s ease-in-out; /* Add hover effect */
+            cursor: pointer; /* Indicate clickable product card */
         }
 
         .product-card:hover {
@@ -74,18 +87,33 @@
             line-height: 1.5;
         }
 
-        footer {
+        .button-container {
             text-align: center;
-            padding: 1rem;
-            background-color: #f0f8ff;
+            margin-top: 2rem;
         }
 
-        footer p {
-            color: #666;
-            margin: 0;
+        .button-container button {
+            margin: 0.5rem;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
         }
 
-        /* Form Styles */
+        .explore-btn {
+            background-color: #f08080; /* Pink button */
+            color: #fff;
+        }
+
+        .learn-more-btn {
+            background-color: #90EE90; /* Light green button */
+            color: #333;
+        }
+
+        .explore-btn:hover, .learn-more-btn:hover {
+            opacity: 0.8; /* Slight opacity change on hover */
+        }
 
         .form-container {
             margin: 2rem auto;
@@ -93,46 +121,5 @@
             padding: 2rem;
             border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        form h2 {
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        form input, form textarea {
-            width: 100%;
-            padding: 0.5rem;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-        }
-
-        form button {
-            background-color: #333;
-            color: #fff;
-            padding: 0.7rem 1rem;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-        }
-
-        form button:hover {
-            background-color: #444;
-        }
-
-        /* Add colorful buttons and hover effects */
-
-        .button-container {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .button-container button {
-            margin: 0.5
+            box-shadow: 0 2px 5px rgba(0
 
