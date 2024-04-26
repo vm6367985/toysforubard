@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToysForU - Unwrap Endless Fun!</title>
+    <title>ToysForU - Spark Imagination & Play!</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url("images/bg-pattern.png"); /* Add a colorful background pattern */
-            background-size: cover;
+            background-color: linear-gradient(to right, #ffc1cc, #ffebde);
         }
 
         header {
@@ -18,7 +17,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
-            background-color: #fff;
+            background-color: #f0f8ff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -27,10 +26,6 @@
             color: #333;
             margin: 0 1rem;
             font-weight: bold;
-        }
-
-        nav {
-            display: flex; /* Allow for more menu options */
         }
 
         .product-section {
@@ -48,12 +43,6 @@
             border: 1px solid #ddd;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background-color: #fff; /* Light background for better readability */
-            transition: transform 0.2s ease-in-out; /* Add hover effect */
-        }
-
-        .product-card:hover {
-            transform: scale(1.02); /* Slight zoom on hover */
         }
 
         .product-card img {
@@ -66,7 +55,6 @@
         .product-card h3 {
             font-size: 1.2rem;
             margin-bottom: 0.5rem;
-            color: #333; /* Darker text for contrast */
         }
 
         .product-card p {
@@ -125,13 +113,21 @@
         form button:hover {
             background-color: #444;
         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ToysForU</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+        </nav>
+    </header>
 
-        /* Add colorful buttons and hover effects */
-
-        .button-container {
-            text-align: center;
-            margin-top: 2rem;
-        }
-
-        .button-container button {
-            margin: 0.5
+    <section class="product-section">
+        <div class="product-card">
+            <img src="images/toy-car.jpg" alt="Toy Car">
+            <h3>Deluxe RC Race Car</h3>
+            <p>Experience high-speed thrills with this remote-controlled car. Perfect for racing indoors or outdoors!</p>
+        </div>
+        <div class="product-card">
